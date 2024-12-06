@@ -3,67 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>GTECH</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    
-    <header class="header">
-        <a href="#" class="GTECH">
-            <img src="img/GTECH.jpg" alt="GTECH logo">          
-        </a>
+    <header>
 
-  
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#artigos">Artigos</a>
-            <a href="#contato">Contato</a>
+        <img src="img/GTECH.jpg" alt="ícone GTECH">
+
+        <h1>GTECH</h1>
+
+
+        <nav class="navbar">
+
+            <!-- Criamos nossas Listas quando tiver em formato Desktop -->
+            <ul class="nav-links">
+
+                <li class="item-menu-header">
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#featured-products">IAS</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#contatos">CONTATO</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#sobre-nos">SOBRE GTECH</a>
+                </li>
+
+            </ul>
+          
         </nav>
+
+
+        <div id="btn-header">
+            <button>
+                <a href="form.html" target="_blank">
+
+                    <i class="fa-solid fa-user" alt="ícone usuário"></i>
+
+                    <p>Cadastre-se</p>
+                </a>
+            </button>
+        </div>
+
     </header>
 
+    <section id="oqeia" class="OqueSaoIas">
+
+        <hr class="line">
+
+        <ul id="IA-list">
+            <!-- O que é IA? -->
+            <li class="IA-item">
+                <p>
+                <h2>O que é uma IA?</h2>
+                </p>
+
+                <p>A Inteligência Artificial (IA) é uma área da ciência da computação que se dedica à criação de
+                    sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.
+                    Essas tarefas incluem, por exemplo, reconhecimento de voz, visão computacional, tomada de decisões e
+                    aprendizado.
+                    Utilizando algoritmos e grandes volumes de dados, a IA aprende com a experiência e melhora sua
+                    performance ao longo do tempo.
+                    Com aplicações em diversas áreas, como saúde, transporte, finanças e entretenimento, a IA está
+                    transformando a forma como interagimos com a tecnologia.
+                    Ela também está moldando o futuro da inovação.</p>
+            </li>
+
+            <!-- Como Posso Utiliza-lá de maneira devida?? -->
+            <li class="IA-item">                
+                <h2>Como utilizar uma IA da maneira correta?</h2>
+                <p>Utilizar uma Inteligência Artificial (IA) de forma correta é essencial para garantir que seus benefícios sejam aproveitados de maneira ética e eficiente. Antes de usar uma IA, é importante entender sua finalidade e suas limitações. Embora a IA seja extremamente eficaz em realizar tarefas específicas, ela não substitui o julgamento humano em decisões mais complexas ou que envolvem questões éticas.
+                    Além disso, é crucial garantir a transparência no funcionamento da IA. As decisões tomadas por esses sistemas devem ser compreensíveis e explicáveis, de forma a evitar discriminação ou viés em seus resultados. Outro ponto fundamental é a proteção de dados pessoais. A IA depende de grandes volumes de dados, e esses dados precisam ser tratados de maneira ética, garantindo a privacidade e segurança das informações dos usuários.                  
+                    Também é importante estar atento ao viés presente nos dados utilizados para treinar a IA. Modelos enviesados podem gerar resultados distorcidos, por isso é necessário monitorar constantemente os sistemas para garantir que eles sejam justos e imparciais. Por fim, a IA deve ser vista como uma ferramenta para complementar o trabalho humano, e não como um substituto. Quando combinada com a inteligência humana, a IA pode gerar resultados mais inovadores e eficazes.
+                    Ao seguir essas diretrizes, podemos garantir que a Inteligência Artificial seja utilizada de maneira responsável, segura e benéfica para todos.</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section id="UseIas" class="principais-IAS">
+        <h2>Inteligências Artificiais</h2>
     
-
-
-    <section id="home">
-        <div class="content">
-            <h2>Bem-vindo à GTECH</h2>
-            <p>Explorando a tecnologia de ponta para o futuro.</p>
-        </div>
-    </section>
-
-    <section id="sobre">
-        <div class="content">
-            <h2>Sobre a GTECH</h2>
-            <p>A GTECH é uma empresa inovadora que trabalha com soluções tecnológicas de última geração.</p>
-        </div>
-    </section>
-
-    <section id="artigos">
-        <div class="content">
-            <h2>Artigos</h2>
-            <p>Aqui você encontra artigos sobre o mundo da tecnologia e suas transformações.</p>
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="content">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para saber mais sobre nossos serviços.</p>
-        </div>
-    </section>
-
-
-
+        <div class="ias">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJtnxxp_-5aIC2h81JN4JZmjmuUfmRv-FKQ&s" alt="DeepL Icone" class="img-ia" loading="lazy">
+                <h3 class="DeepLClass">DeepL</h3>
+            </div>
     
-    <footer>
-        <p>&copy; 2024 GTECH. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-
-</html>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion Icone" class="img-ia" loading="lazy">
+                <h4 class="title-products">Notion</h4>
+            </div>
+    
+            <div>
+                <img src="https://ih1.redbubble.net/image.4896885001.2843/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="ChatGPT Icone" class="img-ia" loading="lazy">
+                <h4 class="title-products">ChatGPT</h4>
+            </div>
+        </div>
+    </section>

@@ -1,5 +1,5 @@
-* {
-    padding: 0;
+* {        /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;            
     margin: 0;
     vertical-align: baseline;
     list-style: none;
@@ -8,95 +8,216 @@
 
 html {
     width: 100%;
-    height: 100%;
-    overflow: scroll; 
-    scrollbar-width: thin; 
-    scrollbar-color: transparent transparent;
+    height: 100vh;
 }
+
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1% 5%; 
-    background-color: #1B1A1C;
+      display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+      align-items: center; /*Alinhar os itens do nosso Header para o centro*/
+      justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+      padding: 1%;  /* Cuida do Preenchimento */
+      background-color: rgb(2, 7, 18); /* Cor de fundo do nosso Cabeçalho/Header */
+      overflow: hidden; /* */
+      
+}
+
+header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+    color: white; /* chamamos a propriedade color e definimos uma cor em questão */ 
+    font-size: 45px; /*Tamanho da letra*/
+}
+
+
+header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
+    width: 11rem;  /* Largura da nossa imagem */
+    height: auto; /* Tamanho da nossa imagem no tamanho automático*/
+}
+
+.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px; /* margem da direita */
+}
+
+.item-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: #137531; /* Aqui atribuimos uma cor */
+    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+}
+
+.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white; /* Cor das letras */
+    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 0.8em; /* Tamanho da letra */
+} 
+
+.navbar {
+    color: white; /*Cor da letra*/
+    display: flex; /*Flexíveis*/
+    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
+    align-items: center; /*Alinhamento da vertical*/
+    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
+    height: 2.6rem; /*Altura do NavBar*/
+}
+
+.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
+    list-style: none; /*Retirando o estilo de lista*/ 
+    display: flex; /*Tornando a caixa flexível, e lado a lado*/
+    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+}
+
+
+.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
+    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,
+.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: white; /*A cor da letra*/
+    text-decoration: none; /*E sem sublinhado*/
+}
+
+#btn-header {   /*Nossa ID do Botão de Login */
+    display: flex; /*  Resposável por colocar os itens na mesma linha (lado a lado) */
+}
+
+#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
+    padding: 8px; /*  Cuida do Preenchimento */
+    background-color: transparent; /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
+    border: none; /* None é usado para retirar algo, nesse caso a borda. */ 
+}
+
+#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
+    align-items: center; /* Alinhar os itens para o centro */
+    gap: 5px;
+    color: white; /*Cor da letra */
+    text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
+    font-weight: 400; /* espessura da fonte */
+}
+
+#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
+    width: 1.8rem; /* Largura */
+    height: auto; /* Tamanho */
+}
+
+main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
+    margin-top: 0px; /*  indica o espaço acima do elemento / superior */
+    font-size: 36px;  /* Tamanho da letra */
+    text-align: center; /* Alinhando o texto para o centro */
+    color: #000000; /* Cor da letra do nosso H2 */
+}
+
+#oqeia {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
 }
 
-header .GTECH img {
-    width: 10rem;  
-    height: auto;
+/* Linha horizontal (hr) */
+.line {
+    width: 100px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
 }
 
-nav {
-    display: flex;
-    gap: 1.5rem;  
+
+#IA-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;  
-    font-weight: 500;
-    transition: color 0.3s ease;
+
+.IA-item {
+    margin-bottom: 20px;
 }
 
-nav a:hover {
-    color: #2ecc71;  
+
+.IA-item h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
-section {
-    padding: 100px 5%;
-    min-height: 100vh;
+
+.IA-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.IA-item p {
+    margin-bottom: 15px;
+}
+
+#UseIas {
+    padding: 20px;
+    background-color: #020712;
+    text-align: center;
+}
+
+#UseIas h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ias {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsividade para telas menores */
 }
 
-section:nth-child(even) {
-    background-color: #e2e2e2;
-}
-
-.content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.content p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-footer {
+.ias > div {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 1rem 0;
-    background-color: #1B1A1C;
-    color: #fff;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+.ias > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.img-ia {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.title-products, .DeepLClass {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    #oqeia {
+        width: 90%;
+        padding: 15px;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 1rem;
+    .IA-item h2 {
+        font-size: 1.5em;
     }
 
-    header .GTECH img {
-        width: 8rem;
-    }
-
-    section {
-        padding: 50px 3%;
+    .IA-item p {
+        font-size: 0.95em;
     }
 }
