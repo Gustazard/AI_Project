@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;  /* Diminui o padding do cabeçalho */
+    padding: 0.5rem 1rem;  
     background-color: rgb(2, 7, 18);
     position: sticky;
     top: 0;
@@ -26,23 +26,23 @@ header {
 
 header>h1 {
     color: white;
-    font-size: 1.5rem;  /* Reduz o tamanho do título */
+    font-size: 1.5rem;  
 }
 
 header>img {
-    width: 8rem;  /* Reduz a largura da imagem */
+    width: 8rem;  
     height: auto;
 }
 
 .item-menu-header {
-    margin-right: 20px;  /* Diminui o espaçamento entre os itens do menu */
+    margin-right: 20px;
 }
 
 .item-menu-header>a {
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;  /* Reduz o tamanho da fonte dos links */
-    transition: color 0.3s ease;  /* Transição mais suave para hover */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;  
 }
 
 .item-menu-header>a:hover {
@@ -51,9 +51,9 @@ header>img {
 
 .navbar {
     display: flex;
-    justify-content: flex-end;  /* Alinha os itens do menu à direita */
+    justify-content: flex-end;  
     align-items: center;
-    padding: 0.5rem 1rem;  /* Diminui o padding do navbar */
+    padding: 0.5rem 1rem;  
     height: auto;
 }
 
@@ -295,7 +295,7 @@ footer p {
     }
 
     header>img {
-        width: 6rem; /* Ajuste a largura da imagem no header */
+        width: 6rem; 
     }
 
     header>h1 {
