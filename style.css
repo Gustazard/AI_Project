@@ -16,65 +16,55 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2%;
+    padding: 0.5rem 1rem;  /* Diminui o padding do cabeçalho */
     background-color: rgb(2, 7, 18);
-    overflow: hidden;
-    position: sticky;  
-    top: 0;  
+    position: sticky;
+    top: 0;
     z-index: 999;
-    height: auto;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 header>h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;  /* Reduz o tamanho do título */
 }
 
 header>img {
-    width: 11rem;
+    width: 8rem;  /* Reduz a largura da imagem */
     height: auto;
 }
 
 .item-menu-header {
-    margin-right: 25px;
-}
-
-.item-menu-header>a:hover {
-    color: #137531;
-    transition: 1s;
+    margin-right: 20px;  /* Diminui o espaçamento entre os itens do menu */
 }
 
 .item-menu-header>a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;  /* Reduz o tamanho da fonte dos links */
+    transition: color 0.3s ease;  /* Transição mais suave para hover */
+}
+
+.item-menu-header>a:hover {
+    color: #137531;
 }
 
 .navbar {
-    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;  /* Alinha os itens do menu à direita */
     align-items: center;
-    padding: 1rem 1.5rem;
-    height: 2.6rem;
+    padding: 0.5rem 1rem;  /* Diminui o padding do navbar */
+    height: auto;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
-    padding: 0 8px;
-}
-
-.nav-links a,
-.nav-links-mobile a {
-    color: white;
-    text-decoration: none;
+    padding: 0 12px;  
 }
 
 #btn-header {
@@ -85,6 +75,20 @@ header>img {
     padding: 8px;
     background-color: transparent;
     border: none;
+}
+
+#btn-header>button>a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#btn-header>button>a>img {
+    width: 1.5rem;  
+    height: auto;
 }
 
 #btn-header>button>a {
@@ -220,6 +224,20 @@ main>section>h2 {
     margin-right: auto;
 }
 
+.sobre-gtech img {
+    width: 150px;  
+    height: auto;  
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease; 
+}
+
+.sobre-gtech img:hover {
+    transform: scale(1.1); 
+}
+
 footer {
     background-color: #020712;
     color: white;
@@ -271,76 +289,17 @@ footer p {
 
 
 
-
-
-
-
-@media(max-width: 768px) {
+@media(max-width: 480px) {
     html {
-        font-size: 14px; 
+        font-size: 12px;
     }
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    header>img {
+        width: 6rem; /* Ajuste a largura da imagem no header */
     }
 
     header>h1 {
-        font-size: 1.8rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .nav-links li {
-        padding: 10px 0;
-    }
-
-    #oqeia {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .IA-item h2 {
-        font-size: 1.5em;
-    }
-
-    .IA-item p {
-        font-size: 0.95em;
-    }
-
-    .ias {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .ias>div {
-        width: 100%;
-        max-width: 200px; 
-    }
-
-    #UseIas h2 {
-        font-size: 1.2rem;
-    }
-
-    .img-ia {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media(max-width: 480px) {
-    html {
-        font-size: 12px; /
+        font-size: 1.5rem;
     }
 
     .nav-links li {
@@ -356,10 +315,6 @@ footer p {
         font-size: 1rem;
     }
 
-    header>img {
-        width: 8rem;
-    }
-
     .img-ia {
         width: 100%;
         height: auto;
@@ -367,5 +322,14 @@ footer p {
 
     .IASClass {
         font-size: 14px;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 15px;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
     }
 }
