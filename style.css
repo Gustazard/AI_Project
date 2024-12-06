@@ -1,5 +1,6 @@
-* {        /*Configurações padrões de início de um projeto dentro do CSS  */
-    padding: 0;            
+* {
+    /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;
     margin: 0;
     vertical-align: baseline;
     list-style: none;
@@ -13,97 +14,154 @@ html {
 
 
 header {
-      display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
-      align-items: center; /*Alinhar os itens do nosso Header para o centro*/
-      justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
-      padding: 1%;  /* Cuida do Preenchimento */
-      background-color: rgb(2, 7, 18); /* Cor de fundo do nosso Cabeçalho/Header */
-      overflow: hidden; /* */
-      
+    display: flex;
+    /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center;
+    /*Alinhar os itens do nosso Header para o centro*/
+    justify-content: space-evenly;
+    /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+    padding: 1%;
+    /* Cuida do Preenchimento */
+    background-color: rgb(2, 7, 18);
+    /* Cor de fundo do nosso Cabeçalho/Header */
+    overflow: hidden;
+    /* */
+
 }
 
-header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
-    color: white; /* chamamos a propriedade color e definimos uma cor em questão */ 
-    font-size: 45px; /*Tamanho da letra*/
+header>h1 {
+    /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+    color: white;
+    /* chamamos a propriedade color e definimos uma cor em questão */
+    font-size: 45px;
+    /*Tamanho da letra*/
 }
 
 
-header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
-    width: 11rem;  /* Largura da nossa imagem */
-    height: auto; /* Tamanho da nossa imagem no tamanho automático*/
+header>img {
+    /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
+    width: 11rem;
+    /* Largura da nossa imagem */
+    height: auto;
+    /* Tamanho da nossa imagem no tamanho automático*/
 }
 
-.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
-    margin-right: 25px; /* margem da direita */
+.item-menu-header {
+    /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px;
+    /* margem da direita */
 }
 
-.item-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
-    color: #137531; /* Aqui atribuimos uma cor */
-    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+.item-menu-header>a:hover {
+    /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: #137531;
+    /* Aqui atribuimos uma cor */
+    transition: 1s;
+    /* E o tempo em que será exibido ao passar o cursor */
 }
 
-.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
-    color: white; /* Cor das letras */
-    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
-    font-size: 0.8em; /* Tamanho da letra */
-} 
+.item-menu-header>a {
+    /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white;
+    /* Cor das letras */
+    text-decoration: none;
+    /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 0.8em;
+    /* Tamanho da letra */
+}
 
 .navbar {
-    color: white; /*Cor da letra*/
-    display: flex; /*Flexíveis*/
-    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
-    align-items: center; /*Alinhamento da vertical*/
-    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
-    height: 2.6rem; /*Altura do NavBar*/
+    color: white;
+    /*Cor da letra*/
+    display: flex;
+    /*Flexíveis*/
+    justify-content: space-between;
+    /*A distribuição dos itens sejam com Space-between*/
+    align-items: center;
+    /*Alinhamento da vertical*/
+    padding: 1rem 1.5rem;
+    /*Preenchimento superior/inferior e esquerda/direita*/
+    height: 2.6rem;
+    /*Altura do NavBar*/
 }
 
-.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
-    list-style: none; /*Retirando o estilo de lista*/ 
-    display: flex; /*Tornando a caixa flexível, e lado a lado*/
-    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
-    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+.nav-links {
+    /*Aqui estamos estilizando a UL (lista não ordenada)*/
+    list-style: none;
+    /*Retirando o estilo de lista*/
+    display: flex;
+    /*Tornando a caixa flexível, e lado a lado*/
+    margin: 0;
+    /*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0;
+    /*Zerando os preenchimentos que são habilitados por padrão*/
 }
 
 
-.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
-    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+.nav-links li {
+    /*Estilizando nossa LI que está dentro da UL*/
+    padding: 0 8px;
+    /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
 }
 
 .nav-links a,
-.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
-    color: white; /*A cor da letra*/
-    text-decoration: none; /*E sem sublinhado*/
+.nav-links-mobile a {
+    /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: white;
+    /*A cor da letra*/
+    text-decoration: none;
+    /*E sem sublinhado*/
 }
 
-#btn-header {   /*Nossa ID do Botão de Login */
-    display: flex; /*  Resposável por colocar os itens na mesma linha (lado a lado) */
+#btn-header {
+    /*Nossa ID do Botão de Login */
+    display: flex;
+    /*  Resposável por colocar os itens na mesma linha (lado a lado) */
 }
 
-#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
-    padding: 8px; /*  Cuida do Preenchimento */
-    background-color: transparent; /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
-    border: none; /* None é usado para retirar algo, nesse caso a borda. */ 
+#btn-header>button {
+    /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
+    padding: 8px;
+    /*  Cuida do Preenchimento */
+    background-color: transparent;
+    /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
+    border: none;
+    /* None é usado para retirar algo, nesse caso a borda. */
 }
 
-#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
-    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
-    align-items: center; /* Alinhar os itens para o centro */
+#btn-header>button>a {
+    /* Estamos chamando aqui nossa TAG de Link para alteração. */
+    display: flex;
+    /* Resposável por colocar os itens na mesma linha (lado a lado)  */
+    align-items: center;
+    /* Alinhar os itens para o centro */
     gap: 5px;
-    color: white; /*Cor da letra */
-    text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
-    font-weight: 400; /* espessura da fonte */
+    color: white;
+    /*Cor da letra */
+    text-decoration: none;
+    /* Responsável por tirar o sublinhado que estava visível */
+    font-weight: 400;
+    /* espessura da fonte */
 }
 
-#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
-    width: 1.8rem; /* Largura */
-    height: auto; /* Tamanho */
+#btn-header>button>a>img {
+    /* Aqui estamos mexendo nO ICON do botão*/
+    width: 1.8rem;
+    /* Largura */
+    height: auto;
+    /* Tamanho */
 }
 
-main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
-    margin-top: 0px; /*  indica o espaço acima do elemento / superior */
-    font-size: 36px;  /* Tamanho da letra */
-    text-align: center; /* Alinhando o texto para o centro */
-    color: #000000; /* Cor da letra do nosso H2 */
+main>section>h2 {
+    /* Aqui estamos chamando nosso H2 para estilização */
+    margin-top: 0px;
+    /*  indica o espaço acima do elemento / superior */
+    font-size: 36px;
+    /* Tamanho da letra */
+    text-align: center;
+    /* Alinhando o texto para o centro */
+    color: #000000;
+    /* Cor da letra do nosso H2 */
 }
 
 #oqeia {
@@ -115,7 +173,6 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Linha horizontal (hr) */
 .line {
     width: 100px;
     border: 1px solid #ccc;
@@ -160,7 +217,7 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
 
 #UseIas h2 {
     font-size: 24px;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -168,10 +225,11 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Responsividade para telas menores */
+    flex-wrap: wrap;
+    text-decoration: none;
 }
 
-.ias > div {
+.ias>div {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -181,9 +239,11 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ias > div:hover {
+.ias>div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
 }
 
 .img-ia {
@@ -192,12 +252,12 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     border-radius: 8px;
 }
 
-.title-products, .DeepLClass {
+.IASClass {
     font-size: 16px;
     color: #555;
     margin-top: 10px;
+    text-decoration: none;
 }
-
 
 
 
